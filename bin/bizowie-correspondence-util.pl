@@ -21,7 +21,7 @@ my $bizowie = WWW::Bizowie::API->new(
 );
 
 my $r = $bizowie->call('/correspondence/template', {
-    correspondence_template_id => 1
+    correspondence_template_id => $template_id,
 });
 
 die "Can't talk to Bizowie!" unless $r->success;
