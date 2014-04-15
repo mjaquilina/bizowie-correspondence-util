@@ -43,7 +43,7 @@ while(1)
 
         print "Writing new template";
         $bizowie->call('/correspondence/template', {
-            correspondence_template_id => 1,
+            correspondence_template_id => $template_id,
             template                   => $new_file,
         });
     }
